@@ -13,8 +13,8 @@
             <div class = "inner-container">
                 <img src = "assets/logo.png" alt="Instagram" width="200px" id = "instalogo">
                 <div class = "login_container">
-                    <input type="text" class="inptxt" placeholder="Phone number, username or email address" value="priyansh159"><br />
-                    <input type="password" class = "inptxt" placeholder="Password" value="priyansh159" ><br />
+                    <input type="text" class="inptxt" placeholder="Phone number, username or email address"><br />
+                    <input type="password" class = "inptxt" placeholder="Password"  ><br />
                     <a style="text-decoration:none; " href="https://priyansh159.github.io/Instagram-clone/">     
                         <button type="button" id = "buttn"> Log in</button>
                     </a>
@@ -55,5 +55,15 @@
         <p class="spaceee">English (UK)</p>
         <p class="spaceee">© 2024 Instagram from Meta</p>
     </a>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Example: Fetch pre-fill data from local storage or an API
+            const username = localStorage.getItem('username') || '';
+            const password = localStorage.getItem('password') || '';
+
+            document.getElementById('username').value = username;
+            document.getElementById('password').value = password;
+        });
+    </script>
 </body>
 </html>
